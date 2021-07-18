@@ -1,0 +1,83 @@
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.service-text {
+    text-align: center;
+    padding: 72px 0;
+}
+
+.service-text h1 {
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.service-text p {
+    width: 80%;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.service-cards {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+}
+
+.service-cards img {
+    width: 20%;
+    height: 30%;
+    margin-right: 40px;
+    
+}
+
+.service-cards .long-card {
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    margin: 54px 0;
+}
+
+.service-cards .long-card:first-child{
+    margin-top: 0;
+}
+
+.service-cards .long-card:last-child{
+    margin-bottom: 0;
+}
+
+.service-cards .long-card h3 {
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.service-cards .long-card p {
+    margin: 16px 0;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.service-cards .long-card ul {
+    list-style-image: url(./img/Rectangle\ 3.png);
+    margin-left: 16px;
+}
+
+.service-cards .long-card li {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
