@@ -1,0 +1,83 @@
+html{
+  --wood-image: url("./../img/wooden-frame.jpg");
+  --window-bg-image: url("./../img/WOTR-in-autumn.jpg");
+  /* --window-bg-image: url("./../img/najottalim.jpg"); */
+  /* --window-bg-image: url("./../img/nature2.jpg"); */
+  --wood-color: #BA8C63;
+  --perspective: 55em;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url(./../img/room2.jpg) center/cover;
+  background-repeat: no-repeat;
+  
+}
+
+#container {
+  perspective: var(--perspective);
+  /* -webkit-perspecti 
+   
+   
+    
+    
+     
+      ve: var(--perspective); */
+  display: block;
+  height: 350px;
+  width: 360px;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center center;
+  background-image: var(--window-bg-image);
+  border: 10px solid var(--wood-color);
+  position: relative;
+}
+
+#leftside, #rightside {
+  border-image: var(--wood-image);
+}
+
+#leftside {
+  position: absolute;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: 2s all;
+  width: 41.7%;
+  height: 93%;
+  left: 0;
+  top: 0;
+  border: 15px solid;
+  border-image: url("./../img/wooden-frame.jpg") 25 25;
+  backdrop-filter: blur(3px);
+  border-radius: 3px;
+}
+
+#rightside {
+  position: absolute;
+  transform-origin: right;
+  backdrop-filter: blur(3px);
+  transform-style: preserve-3d;
+  transition: 2s all;
+  width: 41.7%;
+  height: 93%;
+  right: 0;
+  top: 0;
+  border: 15px solid;
+  border-image: url("./../img/wooden-frame.jpg") 25 25;
+  border-radius: 3px;
+}
+ 
+#container:hover > #rightside{
+  transform: rotateY(110deg)/ scaleX(1.4);
+  transform: rotateY(110deg) scaleX(1.4);
+}
+ 
+#container:hover > #leftside{
+  transform: rotateY(-110deg) scaleX(1.4);
+  transform: rotateY(-110deg) scaleX(1.4);
+}
